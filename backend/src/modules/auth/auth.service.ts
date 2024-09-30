@@ -41,6 +41,7 @@ export class AuthService {
       email,
       password,
     );
+    console.log('Usuario autenticado:', user);
 
     return this.createToken(user);
   }

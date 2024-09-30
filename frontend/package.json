@@ -32,6 +32,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-query": "^3.39.3",
     "react-toastify": "^10.0.5",
+    "vercel": "^37.6.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {
