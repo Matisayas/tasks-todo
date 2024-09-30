@@ -24,4 +24,5 @@ export class RegisterDto {
   password!: string;
 
   googleId?: string;
+  // esto
 }
