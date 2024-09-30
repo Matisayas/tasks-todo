@@ -1,0 +1,141 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Data grid table custom */
+
+.MuiDataGrid-root {
+  border-radius: 4px !important;
+  background-color: #212b36;
+  border: none !important;
+}
+
+.MuiDataGrid-columnHeaders {
+  border-radius: 0%;
+  border-bottom: none;
+}
+
+.MuiDataGrid-cell--withRenderer {
+  border-bottom-style: dashed !important;
+}
+
+.bg-blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.MuiDataGrid-overlayWrapper,
+.MuiDataGrid-overlayWrapperInner {
+  height: auto !important;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Phone field */
+.react-tel-input .special-label {
+  background-color: #212b36 !important;
+  top: -9px !important;
+}
+
+.bg-paper-label .react-tel-input .special-label {
+  background-color: #444d56 !important;
+  top: -9px !important;
+}
+
+.react-tel-input .form-control,
+.react-tel-input .country-list {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.react-tel-input .country.highlight {
+  background-color: #555c65 !important;
+  border-color: #555c65;
+  color: white;
+}
+
+.react-tel-input .country:hover {
+  background-color: #555c65 !important;
+}
+
+.react-tel-input .form-control:hover:not(:active):not(:focus) {
+  border-color: white;
+}
+
+.react-tel-input .form-control:active {
+  border-color: #2d5ff5;
+  border-width: 1px;
+}
+
+.react-tel-input .form-control:focus {
+  border-color: #2d5ff5;
+  border-width: 1px;
+}
+
+/* Agenda */
+
+.agenda .MuiTabs-root .MuiButtonBase-root {
+  border: none !important;
+}
+
+.agenda .rs__view_navigator button:not(:first-child) {
+  display: none;
+}
+
+#MuiDialog-container::has(#schedule-custom-editor) {
+  display: none;
+}
+
+/* Date time picker fields */
+
+.mui-okvmno-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item.Mui-disabled {
+  display: none;
+}
+
+/* Grid */
+
+.danger-row {
+  background-color: #ff11002e !important;
+}
+
+/* Mui Pickers */
+
+.MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-dayWithMargin:not(
+    .Mui-disabled
+  ) {
+  font-weight: 700;
+}
+
+/* Mui Select Multiple */
+
+.select-multiple-with-options .MuiSelect-select {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
